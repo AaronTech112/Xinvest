@@ -21,9 +21,8 @@
       },
       {
         "src": "/(.*)",
-        "dest": "myweb/wsgi.py"
+        "dest": "XinvestProject/wsgi.py"
       }
     ]
   }
-  
   
