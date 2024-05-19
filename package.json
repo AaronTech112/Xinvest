@@ -1,0 +1,6 @@
+{
+    "scripts": {
+      "start": "pip3 install -r requirements.txt && python3 manage.py collectstatic --noinput && gunicorn XinvestProject.wsgi:application"
+    }
+  }
+  
