@@ -1,0 +1,156 @@
+{% load static  %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="bRb11qzX5yeD01rMdfx9D7nEZ1CTQptN2lz6ZSbe">
+
+    <link rel="shortcut icon" type="image/png" href="({% static 'asset/common/images/placeholder.png' %})">
+
+    <title>
+        xInvest
+    </title>
+    <link rel="stylesheet" href="{% static 'theme4/frontend/css/cookie.css' %}">
+    <link href="{% static 'common/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'common/css/animate.min.css' %}">
+    <link rel="stylesheet" href="{% static 'common/css/slick.css' %}">
+    <link rel="stylesheet" href="{% static 'common/css/font-awsome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'common/css/iziToast.min.css' %}">
+    <link href="{% static 'theme4/frontend/css/style.css' %}" rel="stylesheet">
+
+    <style>
+        .tradingview-widget-container {
+            height: 46px !important;
+        }
+
+        .tradingview-widget-copyright {
+            display: none;
+        }
+    </style>
+</head>
+<header class="header">
+    <div class="header-bottom">
+        <div class="container">
+            <nav class="navbar navbar-expand-xl p-0 align-items-center">
+
+                <a class="site-logo site-title" href="/">
+                    <img class="img-fluid rounded sm-device-img text-align" src="{% static 'images/logo.png'%}"
+                        width="130%" alt="pp">
+                </a>
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="menu-toggle"></span>
+                </button>
+                <div class="collapse navbar-collapse mt-lg-0 mt-3" id="mainNavbar">
+                    <ul class="nav navbar-nav sp_main_menu me-auto">
+                        <li class="nav-item active"><a class="nav-link" href="{% url 'home' %}">Home</a></li>
+                
+                        <li class="nav-item"><a class="nav-link" href="{% url 'investment_plans' %}">Investment plans</a></li>
+                
+                        <li class="nav-item"><a class="nav-link" href="{% url 'about' %}">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'contact' %}">Contact</a></li>
+                
+                        <li class="nav-item"><a class="nav-link" href="{% url 'blogs' %}">Blog</a></li>
+                    </ul>
+                    <div class="navbar-action">
+                        <select class="changeLang me-3" aria-label="Default select example">
+                            <option value="ka">
+                                Georgia
+                            </option>
+                            <option value="pt">
+                                Portuguese
+                            </option>
+                            <option value="fr">
+                                Francais
+                            </option>
+                            <option value="afr">
+                                Afrikaans
+                            </option>
+                            <option value="spanish">
+                                Spanish
+                            </option>
+                            <option value="EN">
+                                English
+                            </option>
+                        </select>
+                        <a class="text-white me-3" href="{% url 'login' %}">Login</a>
+                        <a href="{% url 'register' %}" class="btn main-btn btn-sm">Sign up <i
+                                class="las la-long-arrow-alt-right ms-2"></i></a>
+                    </div>
+                </div>
+                
+            </nav>
+        </div>
+    </div><!-- header-bottom end -->
+</header>
+<!-- header-section end  -->
+
+<body {% block body %}{% endblock body %}>
+    {% block content %} 
+    {% endblock content%} 
+    <footer class="footer-section has-bg-img">
+        <div class="footer-logo-portion">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <a href="#" class="footer-logo">
+                            <img class="img-fluid rounded sm-device-img text-align" src="{% static 'images/logo.png'%}"
+                                width="100%" alt="pp">
+                        </a>
+
+                        <ul class="social-links justify-content-center mt-3">
+                            <li>
+                                <a href="#" target="_blank" class="twitter"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" class="twitter"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" class="twitter"><i class="fab fa-instagram"></i></a>
+                            </li>
+                        </ul>
+
+                        <ul class="footer-inline-list justify-content-center mt-4">
+                            <li> <a href="">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-menu-portion">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <p class="mb-0 footer-text-clr">
+                            Copyright 2024 hyip max. all rights reserved.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <button type="button" class="cmn-btn btn-sm btn-floating" id="btn-back-to-top">
+        <i class="fas fa-arrow-up text-light"></i>
+        <script src="/js/bootstrap.bundle.min.js"></script>
+        <script src="{% static 'common/js/bootstrap.bundle.min.js' %}"></script>
+        <script src="{% static 'common/js/jquery.min.js' %}"></script>
+        <script src="{% static 'common/js/slick.min.js' %}"></script>
+        <script src="{% static 'common/js/wow.min.js' %}"></script>
+        <script src="{% static 'theme4/frontend/js/jquery.paroller.min.js' %}"></script>
+        <script src="{% static 'theme4/frontend/js/TweenMax.min.js' %}"></script>
+        <script src="{% static 'common/js/iziToast.min.js' %}"></script>
+        <script src="{% static 'theme4/frontend/js/m.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,1093 @@
+{% extends "XinvestApp/base.html" %}
+{% load static %}
+    <!-- header-section start  -->
+    {% block content %}
+
+    <main id="main" class="main-img">
+
+        <section class="banner-section paroller"
+            style="background-image: url({% static 'theme4/images/banner/6468754fb18591684567375.jpg'%});"
+            data-paroller-factor="0.4" data-paroller-factor-sm="0.2" data-paroller-factor-xs="0.1">
+
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-lg-6 text-lg-start text-center">
+                        <div class="banner-content paroller" data-paroller-factor="0.4" data-paroller-factor-sm="0.2"
+                            data-paroller-factor-xs="0.1">
+                            <h2 class="banner-title wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.3s">Go to
+                                the next level investing</h2>
+                            <p class="banner-description mt-3 wow fadeInUp" data-wow-duration="0.3s"
+                                data-wow-delay="0.5s">Next-level investing involves advanced strategies like
+                                diversification and active trading for higher returns.</p>
+                            <div class="mt-4 wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.7s">
+                                <a href="#" class="btn main-btn me-3">
+                                    <span>Get started</span>
+                                </a>
+                                <a href="{% url 'register' %}" class="btn main-btn2 bg-white sp_text_dark">
+                                    <span>Know more</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="counter-section">
+            <div class="container">
+                <div class="row counter-wrapper justify-content-center">
+
+                    <div class="col-xl-4 col-md-6">
+                        <div class="plan-item">
+                            <div class="plan-name-area">
+                                <h3 class="plan-name mb-2">Diamond</h3>
+                                <span class="plan-status">1 day</span>
+                            </div>
+                            <div class="plan-fatures">
+                                <ul class="plan-list">
+                                    <li>
+                                        <span class="caption">Minimum </span>
+                                        <span class="details"> $7000</span>
+                                    </li>
+                                    <li>
+                                        <span class="caption">Maximum </span>
+                                        <span class="details"> $8000</span>
+                                    </li>
+                                    <li>
+                                        <span class="caption">Minimum return</span>
+                                        <span class="details"> $20</span>
+                                    </li>
+
+                                    <li>
+                                        <span class="caption">Maximum return</span>
+                                        <span class="details"> $40</span>
+                                    </li>
+
+
+
+                                    <li>
+                                        <span class="caption">Gift Bonus</span>
+                                        <span class="details">$0</span>
+                                    </li>
+                                </ul>
+
+                                <div class="plan-rio">
+                                    <h6>$</h6>
+                                    <p class="plan-amount">
+                                        8000
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="plan-action">
+                                <a class="main-btn plan-btn w-100" href="dashboard/PayOut.html">
+                                    <span>Invest now</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="col-xl-4 col-md-6">
+                        <div class="plan-item">
+                            <div class="plan-name-area">
+                                <h3 class="plan-name mb-2">Silver</h3>
+                                <span class="plan-status">3 Hours</span>
+                            </div>
+                            <div class="plan-fatures">
+                                <ul class="plan-list">
+                                    <li>
+                                        <span class="caption">Minimum </span>
+                                        <span class="details"> $4500</span>
+                                    </li>
+                                    <li>
+                                        <span class="caption">Maximum </span>
+                                        <span class="details"> $4500</span>
+                                    </li>
+                                    <li>
+                                        <span class="caption">Minimum return</span>
+                                        <span class="details"> $10</span>
+                                    </li>
+
+                                    <li>
+                                        <span class="caption">Maximum return</span>
+                                        <span class="details"> $5</span>
+                                    </li>
+
+
+
+                                    <li>
+                                        <span class="caption">Gift Bonus</span>
+                                        <span class="details">$20</span>
+                                    </li>
+                                </ul>
+
+                                <div class="plan-rio">
+                                    <h6>$</h6>
+                                    <p class="plan-amount">
+                                        4500
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="plan-action">
+                                <a class="main-btn plan-btn w-100" href="dashboard/PayOut.html">
+                                    <span>Invest now</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="col-xl-4 col-md-6">
+                        <div class="plan-item">
+                            <div class="plan-name-area">
+                                <h3 class="plan-name mb-2">Gold</h3>
+                                <span class="plan-status">5 Hours</span>
+                            </div>
+                            <div class="plan-fatures">
+                                <ul class="plan-list">
+                                    <li>
+                                        <span class="caption">Minimum </span>
+                                        <span class="details"> $1500</span>
+                                    </li>
+                                    <li>
+                                        <span class="caption">Maximum </span>
+                                        <span class="details"> $2000</span>
+                                    </li>
+                                    <li>
+                                        <span class="caption">Minimum return</span>
+                                        <span class="details"> $5</span>
+                                    </li>
+
+                                    <li>
+                                        <span class="caption">Maximum return</span>
+                                        <span class="details"> $10</span>
+                                    </li>
+
+
+
+                                    <li>
+                                        <span class="caption">Gift Bonus</span>
+                                        <span class="details">$5</span>
+                                    </li>
+                                </ul>
+
+                                <div class="plan-rio">
+                                    <h6>$</h6>
+                                    <p class="plan-amount">
+                                        2000
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="plan-action">
+                                <a class="main-btn plan-btn w-100" href="dashboard/PayOut.html">
+                                    <span>Invest now</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="col-xl-4 col-md-6">
+                        <div class="plan-item">
+                            <div class="plan-name-area">
+                                <h3 class="plan-name mb-2">Bronze</h3>
+                                <span class="plan-status">1 or 2 days</span>
+                            </div>
+                            <div class="plan-fatures">
+                                <ul class="plan-list">
+                                    <li>
+                                        <span class="caption">Minimum </span>
+                                        <span class="details"> $9000</span>
+                                    </li>
+                                    <li>
+                                        <span class="caption">Maximum </span>
+                                        <span class="details"> $10000</span>
+                                    </li>
+                                    <li>
+                                        <span class="caption">Minimum return</span>
+                                        <span class="details"> $10</span>
+                                    </li>
+
+                                    <li>
+                                        <span class="caption">Maximum return</span>
+                                        <span class="details"> $20</span>
+                                    </li>
+
+
+
+                                    <li>
+                                        <span class="caption">Gift Bonus</span>
+                                        <span class="details">$500</span>
+                                    </li>
+                                </ul>
+
+                                <div class="plan-rio">
+                                    <h6>$</h6>
+                                    <p class="plan-amount">
+                                        10000
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="plan-action">
+                                <a class="main-btn plan-btn w-100" href="dashboard/PayOut.html">
+                                    <span>Invest now</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </section>
+
+            <div class="calculate-area">
+                <div class="calculator"><img
+                        src="https://hyipmax.springsoftit.com/demo/asset/theme4/images/elements/calculator.png"
+                        alt="image"></div>
+                <div class="container">
+                    <div class="row gy-4 align-items-end">
+                        <div class="col-lg-4 col-md-6">
+                            <label class="mbl-h text-white">Amount</label>
+                            <input type="text" class="form-control" name="amount" id="amount"
+                                placeholder="Enter amount">
+                        </div>
+                        <div class="col-lg-5 col-md-6">
+                            <label class="mbl-h text-white">Investment plan</label>
+
+                        </div>
+                        <div class="col-lg-3">
+                            <a href="#0" id="calculate-btn" class="main-btn w-100"> <span>Calculate earning</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="invest" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <form action="https://hyipmax.springsoftit.com/demo/investmentplan/invest" method="post">
+                        <input type="hidden" name="_token" value="bRb11qzX5yeD01rMdfx9D7nEZ1CTQptN2lz6ZSbe">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Invest now</h5>
+                                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container-fluid">
+                                    <div class="form-group">
+                                        <label for="">Invest amount</label>
+                                        <input type="text" name="amount" class="form-control">
+                                        <input type="hidden" name="plan_id" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="submit" class="btn main-btn"><span>Invest now</span></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <section class="work-section sp_pt_120 sp_pb_120 sp_separator_bg">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-7 text-center">
+                            <div class="sp_site_header  wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.3s">
+                                <h2 class="sp_site_title">Started investing with hyipmax</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row gy-4 justify-content-center">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="work-item">
+                                <div class="work-number">
+                                    1
+                                </div>
+                                <div class="work-content">
+                                    <h4 class="title">Create an account</h4>
+                                    <p class="mt-2">Create an Account: Begin Your Journey <br>
+                                        To create an account, click on the 'Sign Up' button. Enter your details,
+                                        including name, email, and password. Verify your email, then log in to access
+                                        your account.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="work-item">
+                                <div class="work-number">
+                                    2
+                                </div>
+                                <div class="work-content">
+                                    <h4 class="title">Choose plan</h4>
+                                    <p class="mt-2">Select Your Plan: Tailor Your Investment Journey <br>
+                                        Browse through our plan options. Choose the one that best fits your investment
+                                        goals and budget. Complete the subscription process to unlock exclusive features
+                                        and benefits.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="work-item">
+                                <div class="work-number">
+                                    3
+                                </div>
+                                <div class="work-content">
+                                    <h4 class="title">Get profit</h4>
+                                    <p class="mt-2">
+                                        Earn Profits: Maximizing Returns <br>
+                                        Once you've invested, monitor your portfolio regularly. As your investments
+                                        grow, track profits through our platform's analytics. Withdraw profits securely
+                                        when due.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> <!-- about section start -->
+            <section class="about-section sp_pt_120 sp_pb_120 overflow-hidden">
+                <div class="about-section-el">
+                    <img src="https://hyipmax.springsoftit.com/demo/asset/theme4/images/elements/el-2.png" alt="image">
+                </div>
+                <div class="container">
+                    <div class="row gy-5 justify-content-between">
+                        <div class="col-lg-6 col-md-10">
+                            <div class="about-thumb">
+                                <img src="https://hyipmax.springsoftit.com/demo/asset/theme4/images/about/646876c6d53181684567750.jpg"
+                                    alt="image">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 ps-xl-5 p-lg-4 about-content wow fadeInUp" data-wow-duration="0.5s"
+                            data-wow-delay="0.5s">
+                            <div class="about-content">
+                                <h2 class="sp_site_title">Join the xInvesst community</h2>
+                                <p class="fs-lg mt-3">
+                                <p style="color:rgb(59,59,59);font-size:1.125rem;">
+                                    Explore exclusive opportunities with our community. Experience expert guidance,
+                                    capitalize on market trends, and maximize your potential profits. Join us today.
+                                    <a href="#" class="btn main-btn mt-4"><span>Learn more</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- about section end -->
+            <section class="benefit-section sp_pt_120 sp_pb_120">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-7 text-center">
+                            <div class="sp_site_header  wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.3s">
+                                <h2 class="sp_site_title">Everything you need to fast track your investment</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row gy-4">
+                        <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.7s">
+                            <div class="benefit-item">
+                                <div class="benefit-icon">
+                                    <i class="fas fa-headset"></i>
+                                </div>
+                                <div class="benefit-content">
+                                    <h4 class="title">Top technical analysis</h4>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.7s">
+                            <div class="benefit-item">
+                                <div class="benefit-icon">
+                                    <i class="fas fa-hospital"></i>
+                                </div>
+                                <div class="benefit-content">
+                                    <h4 class="title">Direct email and sms* signals</h4>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.7s">
+                            <div class="benefit-item">
+                                <div class="benefit-icon">
+                                    <i class="far fa-kiss-beam"></i>
+                                </div>
+                                <div class="benefit-content">
+                                    <h4 class="title">High performance</h4>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.7s">
+                            <div class="benefit-item">
+                                <div class="benefit-icon">
+                                    <i class="fab fa-jenkins"></i>
+                                </div>
+                                <div class="benefit-content">
+                                    <h4 class="title">Highly recommended</h4>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.7s">
+                            <div class="benefit-item">
+                                <div class="benefit-icon">
+                                    <i class="fab fa-ioxhost"></i>
+                                </div>
+                                <div class="benefit-content">
+                                    <h4 class="title">Full expert support</h4>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.7s">
+                            <div class="benefit-item">
+                                <div class="benefit-icon">
+                                    <i class="fas fa-heartbeat"></i>
+                                </div>
+                                <div class="benefit-content">
+                                    <h4 class="title">Join a growing community</h4>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="faq-section sp_pt_120 sp_pb_120">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6 text-center">
+                            <div class="sp_site_header">
+                                <h2 class="sp_site_title">Frequently Asked Questions</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center g-3">
+                        <div class="col-md-10">
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading-1">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false"
+                                            aria-controls="collapseSix">
+                                            Does this software is generating online money
+                                        </button>
+                                    </h2>
+                                    <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading-1"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p> As at this time,platform is not generating any money yet.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading-2">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false"
+                                            aria-controls="collapseSix">
+                                            Is there any signup Bonus system ?
+                                        </button>
+                                    </h2>
+                                    <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading-2"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>
+                                                Currently working on implementing this feature soon!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading-3">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false"
+                                            aria-controls="collapseSix">
+                                            How Do i check my account Banalace
+                                        </button>
+                                    </h2>
+                                    <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading-3"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>In your dashboard locate the button 'earnig' click it and a window will
+                                                open with your balance.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading-4">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false"
+                                            aria-controls="collapseSix">
+                                            How many payments gateway are use in this site
+                                        </button>
+                                    </h2>
+                                    <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading-4"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>As of now, the site only supports crypto as a payment method</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="investor-section sp_pt_120 sp_pb_120 sp_separator_bg">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-7 text-center">
+                            <div class="sp_site_header  wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.3s">
+                                <h2 class="sp_site_title">Our Top Investors</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="investor-slider">
+                        <div class="single-slide">
+                            <div class="investor-item">
+                                <div class="investor-thumb">
+                                    <div class="investor-thumb-inner">
+                                        <img src="https://hyipmax.springsoftit.com/demo/asset/common/images/placeholder.png"
+                                            alt="image">
+                                    </div>
+                                </div>
+                                <div class="investor-content">
+                                    <h4 class="name">Stephen Gideon</h4>
+                                    <p class="mt-2">Invest amount <span class="site-color">59,252.00 $</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-slide">
+                            <div class="investor-item">
+                                <div class="investor-thumb">
+                                    <div class="investor-thumb-inner">
+                                        <img src="https://hyipmax.springsoftit.com/demo/asset/common/images/placeholder.png"
+                                            alt="image">
+                                    </div>
+                                </div>
+                                <div class="investor-content">
+                                    <h4 class="name">Wules james</h4>
+                                    <p class="mt-2">Invest amount <span class="site-color">5,551.00 $</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-slide">
+                            <div class="investor-item">
+                                <div class="investor-thumb">
+                                    <div class="investor-thumb-inner">
+                                        <img src="https://hyipmax.springsoftit.com/demo/asset/common/images/placeholder.png"
+                                            alt="image">
+                                    </div>
+                                </div>
+                                <div class="investor-content">
+                                    <h4 class="name">Aaron Tech</h4>
+                                    <p class="mt-2">Invest amount <span class="site-color">5,200.00 $</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-slide">
+                            <div class="investor-item">
+                                <div class="investor-thumb">
+                                    <div class="investor-thumb-inner">
+                                        <img src="https://hyipmax.springsoftit.com/demo/asset/common/images/placeholder.png"
+                                            alt="image">
+                                    </div>
+                                </div>
+                                <div class="investor-content">
+                                    <h4 class="name">abu femi</h4>
+                                    <p class="mt-2">Invest amount <span class="site-color">4,010.00 $</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-slide">
+                            <div class="investor-item">
+                                <div class="investor-thumb">
+                                    <div class="investor-thumb-inner">
+                                        <img src="https://hyipmax.springsoftit.com/demo/asset/common/images/placeholder.png"
+                                            alt="image">
+                                    </div>
+                                </div>
+                                <div class="investor-content">
+                                    <h4 class="name">Matthew Ochile</h4>
+                                    <p class="mt-2">Invest amount <span class="site-color">1,110.00 $</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-slide">
+                            <div class="investor-item">
+                                <div class="investor-thumb">
+                                    <div class="investor-thumb-inner">
+                                        <img src="https://hyipmax.springsoftit.com/demo/asset/common/images/placeholder.png"
+                                            alt="image">
+                                    </div>
+                                </div>
+                                <div class="investor-content">
+                                    <h4 class="name">Jennifer Donald</h4>
+                                    <p class="mt-2">Invest amount <span class="site-color">1,025.00 $</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-slide">
+                            <div class="investor-item">
+                                <div class="investor-thumb">
+                                    <div class="investor-thumb-inner">
+                                        <img src="https://hyipmax.springsoftit.com/demo/asset/common/images/placeholder.png"
+                                            alt="image">
+                                    </div>
+                                </div>
+                                <div class="investor-content">
+                                    <h4 class="name">reji</h4>
+                                    <p class="mt-2">Invest amount <span class="site-color">1,000.00 $</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-slide">
+                            <div class="investor-item">
+                                <div class="investor-thumb">
+                                    <div class="investor-thumb-inner">
+                                        <img src="https://hyipmax.springsoftit.com/demo/asset/common/images/placeholder.png"
+                                            alt="image">
+                                    </div>
+                                </div>
+                                <div class="investor-content">
+                                    <h4 class="name">yaya bello</h4>
+                                    <p class="mt-2">Invest amount <span class="site-color">1,000.00 $</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-slide">
+                            <div class="investor-item">
+                                <div class="investor-thumb">
+                                    <div class="investor-thumb-inner">
+                                        <img src="https://hyipmax.springsoftit.com/demo/asset/common/images/placeholder.png"
+                                            alt="image">
+                                    </div>
+                                </div>
+                                <div class="investor-content">
+                                    <h4 class="name">Glory OJ</h4>
+                                    <p class="mt-2">Invest amount <span class="site-color">1,000.00 $</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-slide">
+                            <div class="investor-item">
+                                <div class="investor-thumb">
+                                    <div class="investor-thumb-inner">
+                                        <img src="https://hyipmax.springsoftit.com/demo/asset/common/images/placeholder.png"
+                                            alt="image">
+                                    </div>
+                                </div>
+                                <div class="investor-content">
+                                    <h4 class="name">George saint</h4>
+                                    <p class="mt-2">Invest amount <span class="site-color">1,000.00 $</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-slide">
+                            <div class="investor-item">
+                                <div class="investor-thumb">
+                                    <div class="investor-thumb-inner">
+                                        <img src="https://hyipmax.springsoftit.com/demo/asset/common/images/placeholder.png"
+                                            alt="image">
+                                    </div>
+                                </div>
+                                <div class="investor-content">
+                                    <h4 class="name">Michael Ibobo</h4>
+                                    <p class="mt-2">Invest amount <span class="site-color">1,000.00 $</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-slide">
+                            <div class="investor-item">
+                                <div class="investor-thumb">
+                                    <div class="investor-thumb-inner">
+                                        <img src="https://hyipmax.springsoftit.com/demo/asset/common/images/placeholder.png"
+                                            alt="image">
+                                    </div>
+                                </div>
+                                <div class="investor-content">
+                                    <h4 class="name">Arshad Ali</h4>
+                                    <p class="mt-2">Invest amount <span class="site-color">1,000.00 $</span></p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <section class="transaction-section sp_pt_120 sp_pb_120">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-7 text-center">
+                            <div class="sp_site_header  wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.3s">
+                                <h2 class="sp_site_title">Our latest transaction</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="transaction-wrapper">
+                                <div class="transaction-wrapper-top mb-4">
+                                    <h4 class="title">Transaction history</h4>
+                                    <ul class="nav nav-pills transaction-tabs" id="pills-tab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                                data-bs-target="#pills-home" type="button" role="tab"
+                                                aria-controls="pills-home" aria-selected="true">Latest invests</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                                data-bs-target="#pills-profile" type="button" role="tab"
+                                                aria-controls="pills-profile" aria-selected="false">Latest
+                                                withdraws</button>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="tab-content" id="pills-tabContent">
+                                    <div class="tab-pane table-content fade show active" id="pills-home" role="tabpanel"
+                                        aria-labelledby="pills-home-tab">
+                                        <table class="table site-table">
+                                            <thead>
+                                                <tr class="bg-yellow">
+                                                    <th scope="col">Username</th>
+                                                    <th scope="col">Date</th>
+                                                    <th scope="col">Amount</th>
+                                                    <th scope="col">Gateway</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td data-caption="Username">plgggv</td>
+                                                    <td data-caption="Date">
+                                                        2024-05-08</td>
+                                                    <td data-caption="Amount">
+                                                        200.00 $</td>
+                                                    <td data-caption="Gateway">Deposit
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-caption="Username">plgggv</td>
+                                                    <td data-caption="Date">
+                                                        2024-05-08</td>
+                                                    <td data-caption="Amount">
+                                                        500.00 $</td>
+                                                    <td data-caption="Gateway">Deposit
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-caption="Username">plgggv</td>
+                                                    <td data-caption="Date">
+                                                        2024-05-08</td>
+                                                    <td data-caption="Amount">
+                                                        90.00 $</td>
+                                                    <td data-caption="Gateway">Deposit
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-caption="Username">plgggv</td>
+                                                    <td data-caption="Date">
+                                                        2024-05-08</td>
+                                                    <td data-caption="Amount">
+                                                        100.00 $</td>
+                                                    <td data-caption="Gateway">Deposit
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-caption="Username">admin1234</td>
+                                                    <td data-caption="Date">
+                                                        2024-05-07</td>
+                                                    <td data-caption="Amount">
+                                                        100.00 $</td>
+                                                    <td data-caption="Gateway">Deposit
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-caption="Username">alexlbc</td>
+                                                    <td data-caption="Date">
+                                                        2024-05-06</td>
+                                                    <td data-caption="Amount">
+                                                        100.00 $</td>
+                                                    <td data-caption="Gateway">Deposit
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-caption="Username">Mahendr</td>
+                                                    <td data-caption="Date">
+                                                        2024-05-05</td>
+                                                    <td data-caption="Amount">
+                                                        100.00 $</td>
+                                                    <td data-caption="Gateway">Deposit
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-caption="Username">Usman9393</td>
+                                                    <td data-caption="Date">
+                                                        2024-05-05</td>
+                                                    <td data-caption="Amount">
+                                                        1,000.00 $</td>
+                                                    <td data-caption="Gateway">stripe
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-caption="Username">Mrtester</td>
+                                                    <td data-caption="Date">
+                                                        2024-05-04</td>
+                                                    <td data-caption="Amount">
+                                                        1,000.00 $</td>
+                                                    <td data-caption="Gateway">Deposit
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-caption="Username">ahmed20</td>
+                                                    <td data-caption="Date">
+                                                        2024-05-02</td>
+                                                    <td data-caption="Amount">
+                                                        500.00 $</td>
+                                                    <td data-caption="Gateway">Deposit
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                        aria-labelledby="pills-profile-tab">
+                                        <table class="table site-table">
+                                            <thead>
+                                                <tr class="bg-yellow">
+                                                    <th scope="col">Name</th>
+                                                    <th scope="col">Date</th>
+                                                    <th scope="col">Amount</th>
+                                                    <th scope="col">Gateway</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td data-caption="Name">Resty</td>
+                                                    <td data-caption="Date">
+                                                        2023-10-15</td>
+                                                    <td data-caption="Amount">
+                                                        100.00 $
+                                                    </td>
+                                                    <td data-caption="Gateway">Mari Fela
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-caption="Name">jerryk</td>
+                                                    <td data-caption="Date">
+                                                        2023-10-09</td>
+                                                    <td data-caption="Amount">
+                                                        100.00 $
+                                                    </td>
+                                                    <td data-caption="Gateway">Mari Fela
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-caption="Name">jerryk</td>
+                                                    <td data-caption="Date">
+                                                        2023-10-09</td>
+                                                    <td data-caption="Amount">
+                                                        1,000.00 $
+                                                    </td>
+                                                    <td data-caption="Gateway">Mari Fela
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="testimonial-section sp_pt_120 sp_pb_120 sp_separator_bg">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-7 text-center">
+                            <div class="sp_site_header  wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.3s">
+                                <h2 class="sp_site_title">What our investors says</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-slider">
+                        <div class="single-slide">
+                            <div class="testimonial-item">
+                                <p class="testimonial-details">Choosing xInvesst was one of the best decisions I've made for my investment journey. Their platform provided me with invaluable insights and support, leading to substantial profits. I highly recommend it to anyone looking to maximize their returns.</p>
+                                <div class="testimonial-client">
+                                    <div class="thumb">
+                                        <img src="{% static 'theme4/images/testimonial/64649e462e2181684315718.jpg' %}" alt="image">
+                                    </div>
+                                    <div class="content">
+                                        <h5 class="name">John Doe</h5>
+                                        <p>user</p>
+                                    </div>
+                                </div>
+                            </div><!-- testimonial-item end -->
+                        </div>
+                        <div class="single-slide">
+                            <div class="testimonial-item">
+                                <p class="testimonial-details">I couldn't be happier with my decision to invest with xInvesst. Their expert guidance helped me navigate the markets confidently, and I've seen impressive returns on my investments. Joining this platform was truly a game-changer for me.</p>
+                                <div class="testimonial-client">
+                                    <div class="thumb">
+                                        <img src="{% static 'theme4/images/testimonial/6464a144a9e1f1684316484.jpg' %}" alt="image">
+                                    </div>
+                                    <div class="content">
+                                        <h5 class="name">Mary</h5>
+                                        <p>user</p>
+                                    </div>
+                                </div>
+                            </div><!-- testimonial-item end -->
+                        </div>
+                        <div class="single-slide">
+                            <div class="testimonial-item">
+                                <p class="testimonial-details">Choosing xInvesst was one of the best decisions I've made for my investment journey. Their platform provided me with invaluable insights and support, leading to substantial profits. I highly recommend it to anyone looking to maximize their returns.</p>
+                                <div class="testimonial-client">
+                                    <div class="thumb">
+                                        <img src="{% static 'theme4/images/testimonial/6464a1548f8981684316500.jpg' %}" alt="image">
+                                    </div>
+                                    <div class="content">
+                                        <h5 class="name">Alexa</h5>
+                                        <p>user</p>
+                                    </div>
+                                </div>
+                            </div><!-- testimonial-item end -->
+                        </div>
+                        <div class="single-slide">
+                            <div class="testimonial-item">
+                                <p class="testimonial-details">Joining xInvesst has been a game-changer for my investment strategy. With their expert guidance and innovative platform, I've seen my investments grow significantly. I'm grateful for the opportunity to be part of this community</p>
+                                <div class="testimonial-client">
+                                    <div class="thumb">
+                                        <img src="{% static 'theme4/images/testimonial/6464a168bc3481684316520.jpg' %}" alt="image">
+                                    </div>
+                                    <div class="content">
+                                        <h5 class="name">Jennifer</h5>
+                                        <p>user</p>
+                                    </div>
+                                </div>
+                            </div><!-- testimonial-item end -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="blog-section sp_pt_120 sp_pb_120">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-7 text-center">
+                            <div class="sp_site_header  wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.3s">
+                                <h2 class="sp_site_title">Our latest news</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row gy-4">
+                        <div class="col-md-6 col-lg-6">
+                            <div class="blog-item blog-list-style">
+                                <div class="blog-thumb">
+                                    <img src="asset/theme4/images/blog/6464a1fe408351684316670.jpg" alt="blog thumb">
+                                </div>
+                                <div class="blog-content">
+                                    <h4 class="blog-title mt-0"><a
+                                            href="https://hyipmax.springsoftit.com/demo/blog/191/temporibus-dignissimos-aperiam-accusamus-dolore-eius">Temporibus,
+                                            dignissimos aperiam accusamus dolore eius.</a></h4>
+                                    <ul class="blog-meta mt-2">
+                                        <li><i class="fas fa-clock"></i> 11 months ago</li>
+                                        <li><i class="fas fa-comment"></i> 0 Comments</li>
+                                    </ul>
+
+                                    <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui,
+                                        cupiditate! Officiis cumque maxime dignissimos rem voluptates perspiciatis
+                                        eligendi eius, soluta molestiae, expedita asperiores pariatur veniam, excepturi
+                                        dolore! Id, dolorem quis.</p>
+
+                                    <a href="https://hyipmax.springsoftit.com/demo/blog/191/temporibus-dignissimos-aperiam-accusamus-dolore-eius"
+                                        class="blog-btn">
+                                        <span>Read more</span>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6">
+                            <div class="blog-item blog-list-style">
+                                <div class="blog-thumb">
+                                    <img src="https://hyipmax.springsoftit.com/demo/asset/theme4/images/blog/6464a219d46fe1684316697.jpg"
+                                        alt="blog thumb">
+                                </div>
+                                <div class="blog-content">
+                                    <h4 class="blog-title mt-0"><a
+                                            href="https://hyipmax.springsoftit.com/demo/blog/192/temporibus-dignissimos-aperiam-accusamus-dolore-eius">Temporibus,
+                                            dignissimos aperiam accusamus dolore eius.</a></h4>
+                                    <ul class="blog-meta mt-2">
+                                        <li><i class="fas fa-clock"></i> 11 months ago</li>
+                                        <li><i class="fas fa-comment"></i> 0 Comments</li>
+                                    </ul>
+
+                                    <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui,
+                                        cupiditate! Officiis cumque maxime dignissimos rem voluptates perspiciatis
+                                        eligendi eius, soluta molestiae, expedita asperiores pariatur veniam, excepturi
+                                        dolore! Id, dolorem quis.</p>
+
+                                    <a href="" class="blog-btn">
+                                        <span>Read more</span>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="subscribe-section sp_separator_bg">
+
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6 text-center">
+                            <div class="sp_site_header">
+                                <h2 class="sp_site_title">Our newsletter</h2>
+                                <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-7">
+                            <form class="subscribe-form" id="subscribe" method="POST">
+                                <input type="hidden" name="_token" value="bRb11qzX5yeD01rMdfx9D7nEZ1CTQptN2lz6ZSbe">
+                                <input type="text" name="email" class="form-control subscribe-email"
+                                    placeholder="Enter email here">
+                                <button>Subscribe <i class="fas fa-paper-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <div class="modal fade" id="calculationModal" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Profit calculate</h5>
+                            <button type="button" class="close btn sp_btn_warning" data-bs-dismiss="modal"
+                                aria-label="Close">
+                                <span aria-hidden="true" class="text-light">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body" id="profit">
+
+
+                        </div>
+                    </div>
+                </div>
+    </main>
+    {% endblock %}

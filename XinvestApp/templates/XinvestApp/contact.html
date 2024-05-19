@@ -1,0 +1,156 @@
+{% extends "XinvestApp/base.html" %}
+{% load static %}
+    {% block content %}
+  <body {% block body %}style="background-image: url({% static 'asset/theme4/images/body/body-bg.png'%});"{% endblock body %} >
+
+    <main id="main" class="main-img">
+      <!-- page banner start -->
+      <section class="page-banner">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-6 text-center">
+              <h2 class="title text-white">Contact</h2>
+              <ul class="page-breadcrumb justify-content-center mt-2">
+                <li>
+                  <a href="index.html">Home</a>
+                </li>
+                <li>
+                  <a href="contact.html">Home</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- page banner end -->
+
+      <section class="sp_pt_100 sp_pb_100">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-7 text-center">
+              <div class="sp_site_header">
+                <h2 class="sp_site_title">Address</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="col-lg-12">
+              <form action="" method="post" role="form" class="">
+                <input type="hidden" name="_token" value="bRb11qzX5yeD01rMdfx9D7nEZ1CTQptN2lz6ZSbe" /> <div class="row">
+                  <div class="col-md-6 form-group">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required />
+                  </div>
+                  <div class="col-md-6 form-group mt-3 mt-md-0">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required />
+                  </div>
+                </div>
+                <div class="form-group mt-3">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required />
+                </div>
+                <div class="form-group mt-3">
+                  <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                </div>
+
+                <div class="mt-3">
+                  <button class="btn main-btn w-100" type="submit"><span>Send message</span></button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="row gy-4 justify-content-center mt-5">
+            <div class="col-md-4">
+              <div class="contact-item">
+                <div class="icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="content">
+                  <h5 class="title">Chat to support</h5>
+                  <p class="caption">Speak to our friendly team</p>
+                  <p class="mt-2">
+                    <a href="mailto:Info@springsoftit.com">Info@invest.com</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="contact-item">
+                <div class="icon">
+                  <i class="fas fa-map-marked-alt"></i>
+                </div>
+                <div class="content">
+                  <h5 class="title">Visit us</h5>
+                  <p class="caption">Visit our office hq</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="contact-item">
+                <div class="icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div class="content">
+                  <h5 class="title">Call us</h5>
+                  <p class="caption">Mon-fri from 9am to 5pm</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Contact Section -->
+
+      <div class="map-area">
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </main>
+    <footer class="footer-section has-bg-img">
+      <div class="footer-logo-portion">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <a href="" class="footer-logo"><img class="img-fluid rounded sm-device-img text-align" src="asset/images/logo.png" width="100%" alt="pp" /></a>
+
+              <ul class="social-links justify-content-center mt-3"></ul>
+
+              <ul class="footer-inline-list justify-content-center mt-4">
+                <li>
+                  <a href="">Home</a>
+                </li>
+                <li>
+                  <a href="about.html">About</a>
+                </li>
+                <li>
+                  <a href="contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-menu-portion">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <p class="mb-0 footer-text-clr">Copyright 2024 hyip max. all rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <button type="button" class="cmn-btn btn-sm btn-floating" id="btn-back-to-top"><i class="fas fa-arrow-up text-light"></i></button>
+
+    <script src="asset/common/js/jquery.min.js"></script>
+    <script src="asset/common/js/bootstrap.bundle.min.js"></script>
+    <script src="asset/common/js/slick.min.js"></script>
+    <script src="asset/common/js/wow.min.js"></script>
+    <script src="asset/theme5/frontend/js/jquery.paroller.min.js"></script>
+    <script src="asset/theme5/frontend/js/TweenMax.min.js"></script>
+    <script src="asset/common/js/iziToast.min.js"></script>
+    <script src="asset/theme5/frontend/js/main.js"></script>
+  </body>
+  {% endblock content %}
+</html>

@@ -1,0 +1,176 @@
+{% extends "XinvestApp/base.html" %}
+{% load static %}
+    {% block content %}
+  <body {% block body %} style="background-image: url({% static 'theme4/images/body/body-bg.png' %}); {% endblock body %} ">
+    <!-- header-section start -->
+
+    <!-- header-section end -->
+
+    <main id="main" class="main-img">
+      <!-- page banner start -->
+      <section class="page-banner">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-6 text-center">
+              <h2 class="title text-white">About</h2>
+              <ul class="page-breadcrumb justify-content-center mt-2">
+                <li>
+                  <a href="index.html">Home</a>
+                </li>
+                <li>About</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- page banner end -->
+
+      <!-- about section start -->
+      <section class="about-section sp_pt_120 sp_pb_120 overflow-hidden">
+        <div class="about-section-el">
+          <img src="{% static 'theme4/images/elements/el-2.png' %}" alt="image" />
+        </div>
+        <div class="container">
+          <div class="row gy-5 justify-content-between">
+            <div class="col-lg-6 col-md-10">
+              <div class="about-thumb">
+                <img src="{% static 'images/key.png' %}" alt="image" />
+              </div>
+            </div>
+            <div class="col-lg-6 ps-xl-5 p-lg-4 about-content wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">
+              <div class="about-content">
+                <h2 class="sp_site_title">Join the xInvest community</h2>
+                <p>In the dynamic world of cryptocurrency, where innovation and opportunity intertwine, XInvest emerges as a beacon of reliability and innovation, offering investors a seamless gateway into the realm of digital assets. With its intuitive platform and commitment to security, XInvest is not just another crypto exchange; it's a comprehensive ecosystem designed to empower both novice and seasoned investors alike.</p>
+                <a href="About" class="btn main-btn mt-4"><span>Leanr more</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- about section end -->
+
+      <section class="faq-section sp_pt_120 sp_pb_120">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-6 text-center">
+              <div class="sp_site_header">
+                <h2 class="sp_site_title">Frequently Asked Questions</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="row justify-content-center g-3">
+            <div class="col-md-10">
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading-1"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapseSix">Does this software is generating online money</button></h2>
+                  <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading-1" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Ipsum Laborum Provident Suscipit Obcaecati Cumque Dignissimos Quo Veniam Dolore Amet, Accusantium Ullam. Tenetur, Aliquam Voluptatibus. Cupiditate, Iste Dolor Officiis Animi Ipsa Laboriosam Veritatis Doloremque Ut Tenetur, Quidem Aspernatur. Iusto Laboriosam Distinctio, Voluptatibus Voluptate Voluptas Iure Quam Commodi Nisi Deserunt Dolorum Aut.</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Other accordion items here -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonial-section sp_pt_120 sp_pb_120 sp_separator_bg">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-7 text-center">
+              <div class="sp_site_header wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.3s">
+                <h2 class="sp_site_title">What our customer says</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-slider">
+            <div class="single-slide">
+              <div class="testimonial-item">
+                <p class="testimonial-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum in nostrum error, cupiditate harum ad numquam voluptatibus. Reiciendis, dicta veritatis repellat necessitatibus cupiditate odio.</p>
+                <div class="testimonial-client">
+                  <div class="thumb">
+                    <img src="https://hyipmax.springsoftit.com/demo/asset/theme5/images/testimonial/649822a8cd1d71687691944.jpg" alt="image" />
+                  </div>
+                  <div class="content">
+                    <h5 class="name">Jhon Doe</h5>
+                    <p>CEO of BoomHyip</p>
+                  </div>
+                </div>
+              </div>
+              <!-- testimonial-item end -->
+            </div>
+            <div class="single-slide">
+              <div class="testimonial-item">
+                <p class="testimonial-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum in nostrum error, cupiditate harum ad numquam voluptatibus. Reiciendis, dicta veritatis repellat necessitatibus cupiditate odio.</p>
+                <div class="testimonial-client">
+                  <div class="thumb">
+                    <img src="https://hyipmax.springsoftit.com/demo/asset/theme5/images/testimonial/649822bcb13a11687691964.jpg" alt="image" />
+                  </div>
+                  <div class="content">
+                    <h5 class="name">Jhon Doe</h5>
+                    <p>CEO of BoomHyip</p>
+                  </div>
+                </div>
+              </div>
+              <!-- testimonial-item end -->
+            </div>
+            <div class="single-slide">
+              <div class="testimonial-item">
+                <p class="testimonial-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum in nostrum error, cupiditate harum ad numquam voluptatibus. Reiciendis, dicta veritatis repellat necessitatibus cupiditate odio.</p>
+                <div class="testimonial-client">
+                  <div class="thumb">
+                    <img src="https://hyipmax.springsoftit.com/demo/asset/theme5/images/testimonial/649822d35fc541687691987.jpg" alt="image" />
+                  </div>
+                  <div class="content">
+                    <h5 class="name">Jhon Doe</h5>
+                    <p>CEO of BoomHyip</p>
+                  </div>
+                </div>
+              </div>
+              <!-- testimonial-item end -->
+            </div>
+            <div class="single-slide">
+              <div class="testimonial-item">
+                <p class="testimonial-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum in nostrum error, cupiditate harum ad numquam voluptatibus. Reiciendis, dicta veritatis repellat necessitatibus cupiditate odio.</p>
+                <div class="testimonial-client">
+                  <div class="thumb">
+                    <img src="https://hyipmax.springsoftit.com/demo/asset/theme5/images/testimonial/649822e32ca751687692003.jpg" alt="image" />
+                  </div>
+                  <div class="content">
+                    <h5 class="name">Jhon Doe</h5>
+                    <p>CEO of BoomHyip</p>
+                  </div>
+                </div>
+              </div>
+              <!-- testimonial-item end -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="subscribe-section sp_separator_bg">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-6 text-center">
+              <div class="sp_site_header">
+                <h2 class="sp_site_title">Our newsletter</h2>
+                <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-lg-7">
+              <form class="subscribe-form" id="subscribe" method="POST">
+                <input type="hidden" name="_token" value="" /> <input type="text" name="email" class="form-control subscribe-email" placeholder="Enter email here" />
+                <button>Subscribe <i class="fas fa-paper-plane"></i></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  {% endblock content %}
+</html>

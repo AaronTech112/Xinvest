@@ -1,0 +1,134 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="bRb11qzX5yeD01rMdfx9D7nEZ1CTQptN2lz6ZSbe">
+
+    <link rel="shortcut icon" type="image/png" href="{% static 'common/images/placeholder.png' %}">
+
+    <title>
+        xInvesst - Register user
+    </title>
+    
+    <link rel="stylesheet" href="{% static 'theme4/frontend/css/cookie.css' %}">
+    <link href="{% static 'common/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'common/css/animate.min.css' %}">
+    <link rel="stylesheet" href="{% static 'common/css/slick.css' %}">
+    <link rel="stylesheet" href="{% static 'common/css/font-awsome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'common/css/iziToast.min.css' %}">
+    <link href="{% static 'theme4/frontend/css/style.css' %}" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="{% static 'theme4/frontend/css/color.php?primary_color=' %}">
+</head>
+
+<body>
+        <!-- Display messages -->
+        {% if messages %}
+            <div class="messages">
+                {% for message in messages %}
+                    <div class="alert {% if message.tags %}alert-{{ message.tags }}{% else %}alert-info{% endif %}" role="alert">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+            <div id="preloader"></div>
+    
+    <main id="main" class="main-img">
+            
+    <section class="auth-section auth-section-two">
+        <div class="auth-wrapper">
+            <div class="auth-top-part">
+                <a href="https://hyipmax.springsoftit.com/demo" class="auth-logo">
+                    <img class="img-fluid rounded sm-device-img text-align" src="{% static 'images/logo.png'%}" width="100%" alt="pp">
+                </a>
+                <p class="mb-0"><span class="me-2">Already registered?</span> <a class="btn main-btn btn-sm" href="{% url 'login' %}">Login</a></p>
+            </div>
+            <div class="auth-body-part">
+                <div class="auth-form-wrapper">
+                    <h3 class="text-center mb-4">Create an account</h3>
+                    <form action="" method="POST" >
+                        {% if form.errors %}<p style="color:red; font-size:15px;"> <br>Invalid Details</p><span class="main-heading " style="color:red; font-size:15px;">{{form.errors}} </span>{% else %} <span class="main-heading "><span class="highlight-text">{% endif %}</span></span>
+                        {% csrf_token %}
+                    <div class="row gy-3">
+                            <div class="col-lg-12">
+                                                            </div>
+                            <div class="col-md-6">
+                                <label for="formGroupExampleInput">First name</label>
+                                <input type="text" class="form-control" name="first_name" value="" id="first_name" placeholder="First name">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="formGroupExampleInput">Last name</label>
+                                <input type="text" class="form-control" name="last_name" value="" id="last_name" placeholder="Last name">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="username">Username</label>
+                                <input type="text" class="form-control" name="username" value="" id="username" placeholder="User name">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="formGroupExampleInput">Phone</label>
+                                <input type="text" class="form-control" name="phone_number" value="" id="phone_number" type="tel" placeholder="Phone">
+                            </div>
+
+                            <div class="col-md-12">
+                                <label for="formGroupExampleInput">Email</label>
+                                <input type="Email" class="form-control" name="email" value="" id="email" placeholder="Email">
+                            </div>
+                            <div class="col-md-12">
+                                <label for="formGroupExampleInput">USDT Address</label>
+                                <input type="USDT" class="form-control" name="wallet_address" value="" id="USDT_Address" placeholder="USDT_Address">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="formGroupExampleInput">Pasword</label>
+                                <input type="password" class="form-control" name="password1" id="password1" placeholder="Password">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="formGroupExampleInput"> Confirm pasword</label>
+                                <input type="password" class="form-control" name="password2" id="password2" placeholder="Confirm password">
+                            </div>
+                            <div class="col-md-6">
+                                                            </div>
+                            <div class="col-lg-12">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" name="check" id="exampleCheck1" required>
+                                    <label class="form-check-label" for="exampleCheck1">I agree to the <a href="policy.html"  class="color-change">Privacy policy</a></label>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <button class="btn main-btn w-100" type="submit"> <span>Register</span> </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="auth-footer-part">
+                <p class="text-center mb-0">
+                                            Copyright 2024 hyip max. all rights reserved.
+                                    </p>
+            </div>
+        </div>
+        <div class="auth-thumb-area" style="background-image: url({% static 'images/logo.png'%})">
+            <div class="auth-thumb">
+                <img src="{% static 'images/logo.png'%}" alt="image">
+            </div>
+        </div>
+    </section>
+
+    <script src="{% static 'common/js/jquery.min.js' %}"></script>
+    <script src="{% static 'common/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'common/js/slick.min.js' %}"></script>
+    <script src="{% static 'common/js/wow.min.js' %}"></script>
+    <script src="{% static 'theme5/frontend/js/jquery.paroller.min.js' %}"></script>
+    <script src="{% static 'theme5/frontend/js/TweenMax.min.js' %}"></script>
+    <script src="{% static 'common/js/iziToast.min.js' %}"></script>
+    <script src="{% static 'theme5/frontend/js/main.js' %}"></script>
+
+
+</body>
+
+
+</html>

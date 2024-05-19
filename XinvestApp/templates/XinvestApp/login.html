@@ -1,0 +1,74 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="csrf-token" content="bRb11qzX5yeD01rMdfx9D7nEZ1CTQptN2lz6ZSbe" />
+
+    <link rel="shortcut icon" type="image/png" href="{% static 'common/images/placeholder.png' %}" />
+
+    <title>xInvest- Login page</title>
+    
+    <link rel="stylesheet" href="{% static 'theme4/frontend/css/cookie.css' %}" />
+    <link href="{% static 'common/css/bootstrap.min.css' %}" rel="stylesheet" />
+    <link rel="stylesheet" href="{% static 'common/css/animate.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'common/css/slick.css' %}" />
+    <link rel="stylesheet" href="{% static 'common/css/font-awsome.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'common/css/iziToast.min.css' %}" />
+    <link href="{% static 'theme4/frontend/css/style.css' %}" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="{% static 'theme4/frontend/css/color.php?primary_color=' %}" />
+  </head>
+
+  <body>
+    <div id="preloader"></div>
+
+    <main id="main" class="main-img">
+      <section class="auth-section">
+        <div class="auth-wrapper">
+          <div class="auth-top-part">
+            <a href="" class="auth-logo"><img class="img-fluid rounded sm-device-img text-align" src="{% static 'theme4/images/logo/logo.png'%}" width="100%" alt="pp" /></a>
+            <p class="mb-0">
+              <span class="me-2">Haven&#039;t an account?</span> <a class="btn main-btn btn-sm" href="{% url 'register' %}">Register</a>
+            </p>
+          </div>
+          <div class="auth-body-part">
+            <div class="auth-form-wrapper">
+              <h3 class="text-center mb-4">Login your account</h3>
+              <form action="" method="POST">
+                {% if error_message %}<p style="color:red; font-size:15px;"> <br>{{error_message}}</p><span class="main-heading " style="color:red; font-size:15px;"></span>{% else %} <span class="main-heading "><span class="highlight-text">{% endif %}</span></span>
+                {% csrf_token %}
+                  <label for="formGroupExampleInput">Email</label>
+                  <input type="email" class="form-control" name="email" value="" id="email" placeholder="Enter your email" />
+                </div>
+                <div class="mb-3">
+                  <label for="formGroupExampleInput">Pasword</label>
+                  <input type="password" class="form-control" name="password" id="password" placeholder="Enter password" />
+                </div>
+                <p class="text-end">
+                  <a href="password.html" class="sp_text_dark">Forget password?</a>
+                </p>
+                <button class="btn main-btn w-100 mt-3" type="submit"><span>Log in</span></button>
+              </form>
+            </div>
+          </div>
+          <div class="auth-footer-part">
+            <p class="text-center mb-0">Copyright 2024 xInvest. all rights reserved.</p>
+          </div>
+        </div>
+        <div class="auth-thumb-area" style="background-image: url({% static 'common/images/placeholder.png'%})"></div>
+      </section>
+    </main>
+
+    <script src="{% static 'common/js/jquery.min.js' %}"></script>
+    <script src="{% static 'common/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'common/js/slick.min.js' %}"></script>
+    
+    <script src="{% static 'common/js/wow.min.js' %}"></script>
+    <script src="{% static 'theme4/frontend/js/jquery.paroller.min.js' %}"></script>
+    <script src="{% static 'theme4/frontend/js/TweenMax.min.js' %}"></script>
+    <script src="{% static 'common/js/iziToast.min.js' %}"></script>
+    <script src="{% static 'theme4/frontend/js/main.js' %}"></script>
+  </body>
+</html>

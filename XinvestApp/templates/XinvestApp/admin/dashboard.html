@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+    <title> 
+        Admin Dashboard
+    </title>
+    <link rel="shortcut icon" type="image/png" href="asset/common/images/placeholder.png">
+
+    <!-- General CSS Files -->
+    <link rel="stylesheet" href="admin/css/bootstrap.min.css">
+    <link rel="stylesheet" href="admin/css/font-awsome.min.css">
+    <input type="" name="" value="">
+    <!-- CSS Libraries -->
+    <link rel="stylesheet" href="admin/css/summernote-bs4.min.css">
+    <link rel="stylesheet" href="admin/css/component-custom-switch.min.css">
+    <link rel="stylesheet" href="admin/modules/jquery-selectric/selectric.css">
+    <link rel="stylesheet" href="admin/modules/bootstrap-tagsinput/dist/bootstrap-tagsinput.css">
+    <link rel="stylesheet" href="admin/css/bootstrap-timepicker.min.css">
+    <link rel="stylesheet" href="admin/css/animate.min.css">
+    <link rel="stylesheet" href="admin/css/izitoast.min.css">
+        <link rel="stylesheet" href="admin/modules/bootstrap-daterangepicker/daterangepicker.css">
+    <link rel="stylesheet"
+        href="admin/modules/bootstrap-timepicker/css/bootstrap-timepicker.min.css">
+    <link rel="stylesheet"
+        href="admin/modules/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css">
+    <link rel="stylesheet" href="admin/css/style.css">
+    <link rel="stylesheet" href="admin/css/components.css">
+    <link rel="stylesheet" href="admin/css/custom.css">
+    <link rel="stylesheet" href="admin/css/daterangepicker.css">
+    <link rel="stylesheet" href="admin/css/iconpicker.css">
+
+    </head>
+
+<body>
+    <div id="app">
+        <div class="main-wrapper">
+            <div id="overlay">
+                <div class="cv-spinner">
+                    <span class="spinner"></span>
+                </div>
+            </div>
+            <nav class="navbar navbar-expand-lg main-navbar">
+    
+    <form class="form-inline mr-auto">
+        <ul class="navbar-nav mr-3">
+            <li class="bars-icon-navbar">
+                <a href="#" data-toggle="sidebar" class="nav-link nav-link-lg ">
+                    <i data-feather="menu"></i>
+                </a>
+            </li>
+        </ul>
+        <div class="search-element">
+            <a href="/index.html" target="_blank" class="gr-bg-1 text-white text-decoration-none p-2 rounded"><i
+                    class="fas fa-globe-africa  mr-2"></i><span
+                    class="font-weight-bold">Visit site</span></a>
+        </div>
+    </form>
+
+
+   
+
+
+        <li class="mx-1 my-auto nav-item dropdown no-arrow">
+            <select name="" id="" class="form-control selectric changeLang">
+                                    <option value="ka"
+                        >
+                        Georgia
+                    </option>
+                                    <option value="pt"
+                        >
+                        Portuguese
+                    </option>
+                                    <option value="fr"
+                        >
+                        Francais
+                    </option>
+                                    <option value="afr"
+                        >
+                        Afrikaans
+                    </option>
+                                    <option value="spanish"
+                        >
+                        Spanish
+                    </option>
+                                    <option value="EN"
+                        >
+                        English
+                    </option>
+                            </select>
+        </li>
+
+
+
+        <li class="dropdown"><a href="#" data-toggle="dropdown"
+                class="nav-link dropdown-toggle nav-link-lg nav-link-user">
+
+                <div class="d-lg-inline-block text-capitalize">Hi,
+                    admin</div>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right">
+
+                <a href="" class="dropdown-item has-icon">
+                    <i class="far fa-user"></i> Profile
+                </a>
+
+                <a href="//" class="dropdown-item has-icon text-danger">
+                    <i class="fas fa-sign-out-alt"></i> Logout
+                </a>
+            </div>
+        </li>
+    </ul>
+</nav>
+            <div class="main-sidebar">
+    <aside id="sidebar-wrapper">
+        <div class="sidebar-brand">
+            <a href="dashboard.html">xInvest</a>
+        </div>
+
+        <ul class="sidebar-menu">
+
+            <li class="nav-item dropdown active">
+                <a href="dashboard.html" class="nav-link ">
+                    <i data-feather="home"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+
+            
+
+            
+            <li class="sidebar-menu-caption">Deposit and withdrawal</li>
+
+                  
+            
+                            <li class="nav-item dropdown ">
+                    <a href="#" class="nav-link has-dropdown" data-toggle="dropdown">
+                        <i data-feather="package"></i>
+                        <span>Manage withdraw</span></a>
+                    <ul class="dropdown-menu">
+                        <li class="">
+                           
+                            <a class="nav-link"
+                                href="admin/pending.html">Pending withdraws</a>
+                        </li>
+                        
+                    </ul>
+                </li>
+            
+
+                            <li class="nav-item dropdown ">
+                    <a href="admin/manage_deposits.html" class="nav-link ">
+                        <i data-feather="table"></i>
+                        <span>Manage deposit</span>
+                    </a>
+                </li>
+            
+
+                     
+                             
+            
+            
+    
+
+        </ul>
+    </aside>
+</div>
+                <div class="main-content">
+        <section class="section">
+            
+            
+            <div class="section-header pl-0 d-flex justify-content-between">
+                <h1 class="pl-0">xInvest Admin</h1>
+                <h4> 
+                                           
+                                    </h4>
+            </div>
+                                    
+            
+            
+            
+
+
+            <div class="row"> 
+                <div class="custom-xxxl-3 custom-xxl-4 col-md-6 col-sm-6 col-12 mb-4">
+                    <div class="card-stat gr-bg-1">
+                        <div class="icon">
+                            <i class="fas fa-money-bill-wave-alt"></i>
+                        </div>
+                        <div class="content">
+                            <p class="caption">Total invest</p>
+                            <h4 class="card-stat-amount">23,999,217,220.00 $</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="custom-xxxl-3 custom-xxl-4 col-md-6 col-sm-6 col-12 mb-4">
+                    <div class="card-stat gr-bg-2">
+                        <div class="icon">
+                            <i class="fas fa-spinner"></i>
+                        </div>
+                        <div class="content">
+                            <p class="caption">Total pending invest</p>
+                            <h4 class="card-stat-amount">317,236,784,054.90 $</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="custom-xxxl-3 custom-xxl-4 col-md-6 col-sm-6 col-12 mb-4">
+                    <div class="card-stat gr-bg-3">
+                        <div class="icon">
+                            <i class="fas fa-spinner"></i>
+                        </div>
+                        <div class="content">
+                            <p class="caption">Total interest amount</p>
+                            <h4 class="card-stat-amount">15,761,557.60 $</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="custom-xxxl-3 custom-xxl-4 col-md-6 col-sm-6 col-12 mb-4">
+                    <div class="card-stat gr-bg-4">
+                        <div class="icon">
+                            <i class="far fa-user"></i>
+                        </div>
+                        <div class="content">
+                            <p class="caption">Total user</p>
+                            <h4 class="card-stat-amount">1599</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="custom-xxxl-3 custom-xxl-4 col-md-6 col-sm-6 col-12 mb-4">
+                    <div class="card-stat gr-bg-5">
+                        <div class="icon">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <div class="content">
+                            <p class="caption">Total active user</p>
+                            <h4 class="card-stat-amount">1599</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="custom-xxxl-3 custom-xxl-4 col-md-6 col-sm-6 col-12 mb-4">
+                    <div class="card-stat gr-bg-6">
+                        <div class="icon">
+                            <i class="fas fa-user-times"></i>
+                        </div>
+                        <div class="content">
+                            <p class="caption">Total deactived user</p>
+                            <h4 class="card-stat-amount">0</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="custom-xxxl-3 custom-xxl-4 col-md-6 col-sm-6 col-12 mb-4">
+                    <div class="card-stat gr-bg-7">
+                        <div class="icon">
+                            <i class="fas fa-hand-holding-usd"></i>
+                        </div>
+                        <div class="content">
+                            <p class="caption">Total withdraw</p>
+                            <h4 class="card-stat-amount">1,200.00 $</h4>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="custom-xxxl-3 custom-xxl-4 col-md-6 col-sm-6 col-12 mb-4">
+                    <div class="card-stat gr-bg-8">
+                        <div class="icon">
+                            <i class="fas fa-hand-holding-usd"></i>
+                        </div>
+                        <div class="content">
+                            <p class="caption">Total pending withdraw</p>
+                            <h4 class="card-stat-amount">11,061.50 $</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        
+
+            <div class="row"> 
+                <div class="col-md-6 col-12 col-lg-6">
+                    <div class="card invest-report-card">
+                        <div class="card-header gr-bg-1">
+                            <h4 class="text-white">Invest History</h4>
+                        </div>
+                        <div class="card-body">
+                           <!--Invest History should go here-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6  col-12 col-lg-6">
+                    <div class="card invest-report-card">
+                        <div class="card-header gr-bg-1">
+                            <h4 class="text-white">Withdraw History</h4>
+                        </div>
+                        <div class="card-body">
+                             <!-- Withraw History should go here-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12  col-lg-12 col-12 all-users-table">
+                    <div class="card-header">
+                        <h5>All users</h5>
+                    </div>
+                    <div class="card">
+                        <div class="card-body p-0">
+                            <div class="table-responsive">
+                                <table id="example" class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Sl</th>
+                                            <th>Full name</th>
+                                            <th>Phone</th>
+                                            <th>Email</th>
+                                            <th>Country</th>
+                                            <th>Status</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                                                                    <tr>
+                                                <td>1</td>
+
+                                                <td>Stephen Gideon</td>
+
+                                                <td>demo +2348107173368</td>
+                                                <td>demo gideoncode18@gmail.com</td>
+
+                                                <td></td>
+                                                <td>
+                                                                                                            <span class='badge badge-success'>Active</span>
+                                                                                                    </td>
+                                                <td>
+                                                </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <td>2</td>
+                                                <td>Stephen Gideon</td>
+
+                                                <td>demo +2348107173368</td>
+                                                <td>demo gideoncode18@gmail.com</td>
+                                                <td></td>
+                                                <td>
+                                                                                                            <span class='badge badge-success'>Active</span>
+                                                                                                    </td>
+                                                <td>
+                                                  
+                                                </td>
+                                            </tr>
+                                                          
+                                                                            </tbody>
+                                </table>
+                            </div>
+                        </div>
+                                           
+                                    <li class="page-item">
+                        <a class="page-link" href="#">
+
+                        </a>
+                    </li>
+                            </ul>
+        </nav>
+    </div>
+
+                            </div>
+                                            </div>
+                </div>
+            </div>
+        </section>
+    </div>
+            <footer class="main-footer">
+    <div class="footer-left">
+        Copyright 2024 xInvest. All rights reserved.
+    </div>
+
+</footer>
+        </div>
+    </div>
+
+    
+    <!-- General JS Scripts -->
+    <script src="admin/js/jquery.min.js"></script>
+    <script src="admin/js/proper.min.js"></script>
+    <script src="admin/js/bootstrap.min.js"></script>
+    <script src="admin/js/feather.min.js"></script>
+    <script src="admin/js/nicescroll.min.js"></script>
+    <script src="admin/js/summernote-bs4.min.js"></script>
+    <script src="admin/js/daterangepicker.js"></script>
+    <script src="admin/modules/jquery-selectric/jquery.selectric.min.js"></script>
+    <script src="admin/modules/moment.min.js"></script>
+    <script src="admin/modules/upload-preview/assets/js/jquery.uploadPreview.min.js"></script>
+    <script src="admin/modules/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <script src="admin/modules/bootstrap-timepicker/js/bootstrap-timepicker.min.js"></script>
+    <script src="admin/modules/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js"></script>
+    <script src="admin/js/stisla.js"></script>
+    <script src="admin/js/scripts.js"></script>
+    <script src="admin/js/izitoast.min.js"></script>
+    <script src="admin/js/iconpicker.js"></script>
+    <script src="admin/modules/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js"></script>
+    <script src="admin/js/sortable.min.js"></script>
+    <script src="admin/js/chart.min.js"></script>
+
+</body>
+
+</html>

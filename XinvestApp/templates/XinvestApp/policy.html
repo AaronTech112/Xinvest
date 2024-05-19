@@ -1,0 +1,164 @@
+{% extends "XinvestApp/base.html" %}
+{% load static %}
+    <!-- header-section start  -->
+    {% block content %}
+
+<body {% block body %}style="background-image: url({% static 'asset/theme4/images/body/body-bg.png'%});" {% endblock body %} >
+
+
+
+
+
+    <!-- header-section start  -->
+    <header class="header">
+        <div class="header-bottom">
+            <div class="container">
+                <nav class="navbar navbar-expand-xl p-0 align-items-center">
+
+                    <a class="site-logo site-title" href="">
+                        <img class="img-fluid rounded sm-device-img text-align" src="asset/theme4/images/logo/logo.png"
+                            width="100%" alt="pp">
+                    </a>
+                    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="menu-toggle"></span>
+                    </button>
+                    <div class="collapse navbar-collapse mt-lg-0 mt-3" id="mainNavbar">
+                        <ul class="nav navbar-nav sp_main_menu me-auto">
+                            <li class="nav-item "><a class="nav-link" href="index.html">Home</a></li>
+
+                            <li class="nav-item"><a class="nav-link" href="plan.html">Investment plans</a>
+                            </li>
+
+                            <li class="nav-item"><a class="nav-link" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+
+
+                            <li class="nav-item"><a class="nav-link" href="blogs.html">Blog</a></li>
+
+                        </ul>
+                        <div class="navbar-action">
+                            <select class="changeLang me-3" aria-label="Default select example">
+                                <option value="ka">
+                                    Georgia
+                                </option>
+                                <option value="pt">
+                                    Portuguese
+                                </option>
+                                <option value="fr">
+                                    Francais
+                                </option>
+                                <option value="afr">
+                                    Afrikaans
+                                </option>
+                                <option value="spanish">
+                                    Spanish
+                                </option>
+                                <option value="EN">
+                                    English
+                                </option>
+                            </select>
+                            <a class="text-white me-3" href="login.html">Login</a>
+                            <a href="register.html" class="btn main-btn btn-sm">Sign up <i
+                                    class="las la-long-arrow-alt-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div><!-- header-bottom end -->
+    </header>
+    <!-- header-section end  -->
+
+
+    <main id="main" class="main-img">
+        <section class="page-banner">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 text-center">
+                        <h2 class="title text-white">Privacy policy</h2>
+                        <ul class="page-breadcrumb justify-content-center mt-2">
+                            <li><a href="index.html">Home</a></li>
+                            <li>Privacy policy</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="sp_pt_100 sp_pb_100">
+            <div class="container">
+                <div class="col-md-12">
+                    <div class="row ">
+                        <div class="col-md-12">
+                            <div class="site-card">
+                                <div class="card-body">
+                                    <h4 class="text-center mb-2"><b></b></h4>
+                                    <p> </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer-section has-bg-img">
+        <div class="footer-logo-portion">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <a href="" class="footer-logo">
+                            <img class="img-fluid rounded sm-device-img text-align"
+                                src="asset/theme4/images/logo/whitelogo.png" width="100%" alt="pp">
+                        </a>
+
+                        <ul class="social-links justify-content-center mt-3">
+                        </ul>
+
+                        <ul class="footer-inline-list justify-content-center mt-4">
+                            <li> <a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-menu-portion">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <p class="mb-0 footer-text-clr">
+                            Copyright 2024 hyip max. all rights reserved.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <button type="button" class="cmn-btn btn-sm btn-floating" id="btn-back-to-top">
+        <i class="fas fa-arrow-up text-light"></i>
+        <script src="asset/common/js/jquery.min.js"></script>
+        <script src="asset/common/js/bootstrap.bundle.min.js"></script>
+        <script src="asset/common/js/slick.min.js"></script>
+        <script src="asset/common/js/wow.min.js"></script>
+        <script src="asset/theme5/frontend/js/jquery.paroller.min.js"></script>
+        <script src="asset/theme5/frontend/js/TweenMax.min.js"></script>
+        <script src="asset/common/js/iziToast.min.js"></script>
+        <script src="asset/theme5/frontend/js/main.js"></script>
+
+
+
+
+    </body>
+    {% endblock content %}
+
+</html>
